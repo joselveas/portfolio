@@ -1,27 +1,30 @@
-ul {
-  display: table;
+.menu {
+  width: inherit;
   text-align: center;
-  border: #ddd 1px solid;
+  list-style: none;
 }
 
 @media (max-device-width: 480px){
-  ul li {
+  .menu a {
     display: inline-block;
     float: none;
-    border: #ddd 1px solid;
     margin: auto;
+    color: whitesmoke;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
   }  
 }
 
 @media (min-device-width: 1281px) {
-  ul li {
+  .menu a {
+    color: whitesmoke;
     display: list-item;
     float: none;
-    border: #ddd 1px solid;
-    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
   } 
 }
-/* Change background on mouse-over */
+
 .navbar a:hover {
   background: #ddd;
   color: black;

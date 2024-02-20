@@ -1,23 +1,22 @@
 body {
-    color: blue;
+    color: whitesmoke;
     margin: 0;
     font-family: sans-serif;
-    width: 100%;
-    height: 100vh;
     background-image: url("../images/texturized-black.jpg");
     background-size: cover;
 }
+
 @media (min-device-width: 1281px) {
     body {
         text-align: left;
     }
     .navbar{
         height: 20vh;
-        width: 10%;
+        width: 20vw;
         position: fixed;
         margin-top: 30vh;
         margin-left: 1vh;
-        border: floralwhite 1px solid;
+        text-align: center;
     }
 }
 
@@ -28,6 +27,5 @@ body {
     .navbar{
         height: fit-content;
         position: sticky;
-        border: floralwhite 1px solid;
     }
 }
