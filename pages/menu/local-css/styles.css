@@ -9,7 +9,7 @@
     display: inline-block;
     float: none;
     margin: auto;
-    color: whitesmoke;
+    color: #618930;
     margin: 10px 10px 10px 10px;
     text-decoration: none;
   }  
@@ -17,15 +17,15 @@
 
 @media (min-device-width: 1281px) {
   .menu a {
-    color: whitesmoke;
+    color: #618930;
     display: list-item;
     float: none;
     text-decoration: none;
-    margin: 10px 10px 10px 10px;
+    margin: 15px 10px 10px 10px;
   } 
 }
 
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+  background: #474a4f;
+  color: #87c232;
 }
