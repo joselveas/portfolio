@@ -1,0 +1,28 @@
+ul {
+  display: table;
+  text-align: center;
+  border: #ddd 1px solid;
+}
+
+@media (max-device-width: 480px){
+  ul li {
+    display: inline-block;
+    float: none;
+    border: #ddd 1px solid;
+    margin: auto;
+  }  
+}
+
+@media (min-device-width: 1281px) {
+  ul li {
+    display: list-item;
+    float: none;
+    border: #ddd 1px solid;
+    margin: auto;
+  } 
+}
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
