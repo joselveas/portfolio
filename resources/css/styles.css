@@ -1,8 +1,3 @@
-:root {
-    --bg-color: #3feee7;
-    --text-color: #fc4444;
-}
-
 [theme = "dark"] {
     --bg-color: #222629;
     --text-color: #618930;

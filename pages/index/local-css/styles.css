@@ -7,9 +7,6 @@ body {
 }
 
 .themeChanger {
-    background-image: url('../image/iconDark.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     border: none;
