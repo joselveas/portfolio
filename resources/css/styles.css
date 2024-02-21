@@ -1,31 +1,14 @@
-body {
-    color: #618930;
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #222629;
-    background-size: cover;
+:root {
+    --bg-color: #3feee7;
+    --text-color: #fc4444;
 }
 
-@media (min-device-width: 1281px) {
-    body {
-        text-align: left;
-    }
-    .navbar{
-        height: 20vh;
-        width: 20vw;
-        position: fixed;
-        margin-top: 30vh;
-        margin-left: 1vh;
-        text-align: center;
-    }
+[theme = "dark"] {
+    --bg-color: #222629;
+    --text-color: #618930;
 }
 
-@media (max-device-width: 480px){
-    body{
-        text-align: center;
-    }
-    .navbar{
-        height: fit-content;
-        position: sticky;
-    }
+[theme = "light"] {
+    --bg-color: #3feee7;
+    --text-color: #fc4444;
 }

@@ -9,7 +9,7 @@
     display: inline-block;
     float: none;
     margin: auto;
-    color: #618930;
+    color: var(--text-color);
     margin: 10px 10px 10px 10px;
     text-decoration: none;
   }  
@@ -17,7 +17,7 @@
 
 @media (min-device-width: 1281px) {
   .menu a {
-    color: #618930;
+    color: var(--text-color);
     display: list-item;
     float: none;
     text-decoration: none;

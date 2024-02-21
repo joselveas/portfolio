@@ -1,3 +1,45 @@
+body {
+    color: var(--text-color);
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    background-size: cover;
+}
+
+.themeChanger {
+    background-image: url('../image/iconDark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 10px 10px;
+}
+
 #indexTitle{
     text-align: center;
+}
+
+@media (min-device-width: 1281px) {
+    body {
+        text-align: left;
+    }
+    .navbar{
+        height: 20vh;
+        width: 20vw;
+        position: fixed;
+        margin-top: 30vh;
+        margin-left: 1vh;
+        text-align: center;
+    }
+}
+
+@media (max-device-width: 480px){
+    body{
+        text-align: center;
+    }
+    .navbar{
+        height: fit-content;
+        position: sticky;
+    }
 }
