@@ -9,7 +9,7 @@ $(function(){
     }
 });
 
-const btn = document.getElementById("themeButton");
+const btn = document.getElementById("themeChooser");
 
 btn.addEventListener('click', ()=>{
     let onpageLoad = localStorage.getItem('theme');
