@@ -6,17 +6,22 @@
 
 @media (max-device-width: 480px){
   .menu a {
+    font-size: large;
     display: inline-block;
     float: none;
     margin: auto;
     color: var(--text-color);
     margin: 10px 10px 10px 10px;
     text-decoration: none;
-  }  
+  }
+  .menu a p{
+    font-size: large;
+  }
 }
 
 @media (min-device-width: 1281px) {
   .menu a {
+    font-size: x-large;
     color: var(--text-color);
     display: list-item;
     float: none;

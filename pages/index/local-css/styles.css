@@ -1,5 +1,5 @@
 body {
-    background: url(../image/background.png);
+    background: var(--bg-image);
     color: var(--text-color);
     margin: 0;
     font-family: sans-serif;
@@ -14,11 +14,16 @@ body {
     margin: 10px 10px;
 }
 
-#indexTitle{
-    text-align: center;
-}
-
 @media (min-device-width: 1281px) {
+    #indexTitle{
+        text-align: center;
+        border: 2px solid var(--text-color);
+        border-radius: 15px;
+        margin-left: 20vw;
+        margin-right: 5vw;
+        padding: 10px;
+    }
+    
     body {
         text-align: left;
     }
@@ -33,6 +38,14 @@ body {
 }
 
 @media (max-device-width: 480px){
+    #indexTitle{
+        text-align: center;
+        border: 2px solid var(--text-color);
+        border-radius: 15px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 10px;
+    }
     body{
         text-align: center;
     }

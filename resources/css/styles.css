@@ -1,9 +1,11 @@
 [theme = "dark"] {
     --bg-color: #222629;
     --text-color: #618930;
+    --bg-image: url(/resources/images/backgroundDark.png);
 }
 
 [theme = "light"] {
     --bg-color: #3feee7;
-    --text-color: #fc4444;
+    --text-color: #000000;
+    --bg-image: url(/resources/images/backgroundLight.png);
 }

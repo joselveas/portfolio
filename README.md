@@ -21,8 +21,12 @@ Sección 1.10.32 de "de Finibus Bonorum et Malorum"
 
 # Theme
 ## Theme Background
-<img src='resources/images/colorPalettes/backgroundPruebaDark.png' height='220'>
+### Light:
 <img src='resources/images/colorPalettes/backgroundPruebaLight.png' height='220'>
+
+### Dark: 
+<img src='resources/images/colorPalettes/backgroundPruebaDark.png' height='220'>
+
 
 ## Theme Palettes
 ### Light
