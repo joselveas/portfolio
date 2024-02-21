@@ -9,21 +9,12 @@ $(function(){
     }
 });
 
-const btn = document.getElementById("themeChooser");
-
-btn.addEventListener('click', ()=>{
-    let onpageLoad = localStorage.getItem('theme');
-    setTheme(onpageLoad);
-});
-
 function setTheme(onpageLoad){
     if(onpageLoad === 'light'){
         document.body.setAttribute('theme', 'dark');
         localStorage.setItem('theme', 'dark');
-        document.getElementById("themeButton").src="./resources/images/iconLight.png";
     }else{
         document.body.setAttribute('theme', 'light');
         localStorage.setItem('theme', 'light');
-        document.getElementById("themeButton").src="./resources/images/iconDark.png";
     }
 }

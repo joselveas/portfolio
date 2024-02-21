@@ -3,34 +3,32 @@
   text-align: center;
   list-style: none;
 }
+.menu a{
+  font-size: var(--space-s);
+  color: var(--text-color);
+  float: none;
+  text-decoration: none;
+  margin: var(--space-3xs-s);
+}
+
+.menu a:hover {
+  background: #474a4f;
+  color: #87c232;
+}
+
+.themeChanger {
+  text-align: justify;
+  width: var(--space-m);
+} 
 
 @media (max-device-width: 480px){
   .menu a {
-    font-size: large;
     display: inline-block;
-    float: none;
-    margin: auto;
-    color: var(--text-color);
-    margin: 10px 10px 10px 10px;
-    text-decoration: none;
-  }
-  .menu a p{
-    font-size: large;
   }
 }
 
 @media (min-device-width: 1281px) {
   .menu a {
-    font-size: x-large;
-    color: var(--text-color);
     display: list-item;
-    float: none;
-    text-decoration: none;
-    margin: 15px 10px 10px 10px;
   } 
-}
-
-.navbar a:hover {
-  background: #474a4f;
-  color: #87c232;
 }
