@@ -12,10 +12,10 @@
   </head>
   <body>
     <div class="menu">
-      <li><a id="home" href="#home">Home</a></li>
-      <li><a id="aboutme" href="#aboutme" >About</a></li>
-      <li><a id="projects" href="#projects">Projects</a></li>
-      <li><a id="contact" href="#contact" >Contact</a></li>
+      <li><a id="home" href="#home" type="button" onClick="document.getElementById('homeText').scrollIntoView({behavior: 'smooth'});">Home</a></li>
+      <li><a id="aboutme" href="#aboutme" type="button" onClick="document.getElementById('aboutmeText').scrollIntoView({behavior: 'smooth'});">About</a></li>
+      <li><a id="projects" href="#projects" type="button" onClick="document.getElementById('projectsText').scrollIntoView({behavior: 'smooth'});">Projects</a></li>
+      <li><a id="contact" href="#contact" type="button" onClick="document.getElementById('contactText').scrollIntoView({behavior: 'smooth'});">Contact</a></li>
       <li id ="themeChooser">
         <img id="themeButton" class="themeChanger" src="resources/images/iconDark.png"/>
       </li>

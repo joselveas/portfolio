@@ -8,9 +8,3 @@
 @media (min-device-width: 1025px) and (min-device-width: 1280px){}
 /* Media Query for Large screens */
 @media (min-device-width: 1281px) {}
-
-
-type="button" onClick="document.getElementById('homeText').scrollIntoView({behavior: 'smooth'});"
-type="button" onClick="document.getElementById('aboutmeText').scrollIntoView({behavior: 'smooth'});"
- type="button" onClick="document.getElementById('projectsText').scrollIntoView({behavior: 'smooth'});"
- type="button" onClick="document.getElementById('contactText').scrollIntoView({behavior: 'smooth'});"
