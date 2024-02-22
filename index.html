@@ -3,27 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans" />
     <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="pages/index/local-css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
     <title>José Veas portfolio</title>
     <link rel="icon" type="image/jpg" href="resources/images/portafolio.png"/>
   </head>
   <body>
-      <div class="navbar">
-
-      </div>
-    <div class="parallax"; id="indexTitle">
-      <h1>Hello World!</h1>
-      <h1>My name is Jose Veas</h1>
-      <h1>I'm a Software Developer</h1>
+    <div class="menu">
+      <li><a id="home" href="#home" type="button" onClick="document.getElementById('homeText').scrollIntoView({behavior: 'smooth'});">Home</a></li>
+      <li><a id="aboutme" href="#aboutme" type="button" onClick="document.getElementById('aboutmeText').scrollIntoView({behavior: 'smooth'});">About</a></li>
+      <li><a id="projects" href="#projects" type="button" onClick="document.getElementById('projectsText').scrollIntoView({behavior: 'smooth'});">Projects</a></li>
+      <li><a id="contact" href="#contact" type="button" onClick="document.getElementById('contactText').scrollIntoView({behavior: 'smooth'});">Contact</a></li>
+      <li id ="themeChooser">
+        <img id="themeButton" class="themeChanger" src="resources/images/iconDark.png"/>
+      </li>
     </div>
     <div class="parallax">
+      <div id="homeText" class="parallax">
+        <h1>Hello World!</h1>
+        <h1>My name is José Veas</h1>
+        <h1>I'm a Software Developer</h1>
       </div>
-
+      <div id="aboutmeText" class="parallax">
+        <h1>Hello World!</h1>
+        <h1>My name is José Veas</h1>
+        <h1>I'm a Software Developer</h1>
+      </div>
+      <div id="projectsText" class="parallax">
+        <h1>Hello World!</h1>
+        <h1>My name is José Veas</h1>
+        <h1>I'm a Software Developer</h1>
+      </div>
+      <div id="contactText" class="parallax">
+        <h1>Hello World!</h1>
+        <h1>My name is José Veas</h1>
+        <h1>I'm a Software Developer</h1>
+      </div>
+    </div>
     </div>
   </body>
   <script src="resources/js/scripts.js"></script>

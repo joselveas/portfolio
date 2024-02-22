@@ -1,46 +1,149 @@
-/* @link https://utopia.fyi/space/calculator?c=320,14,1.2,1240,23,1.25,5,2,&s=0.75|0.5,1.5|2|3|4|6|8|10|12,s-l|m-6xl&g=s,l,xl,NaN */
-
 :root {
-  --space-2xs: clamp(0.4375rem, 0.3288rem + 0.5435vi, 0.75rem);
-  --space-xs: clamp(0.6875rem, 0.5571rem + 0.6522vi, 1.0625rem);
-  --space-s: clamp(0.875rem, 0.6793rem + 0.9783vi, 1.4375rem);
-  --space-m: clamp(1.3125rem, 1.0082rem + 1.5217vi, 2.1875rem);
-  --space-l: clamp(8.75rem, 6.7935rem + 9.7826vi, 14.375rem);
-  --space-xl: clamp(10.5rem, 8.1522rem + 11.7391vi, 17.25rem);
-  --space-2xl: clamp(1.75rem, 1.3587rem + 1.9565vi, 2.875rem);
-  --space-3xl: clamp(2.625rem, 2.038rem + 2.9348vi, 4.3125rem);
-  --space-4xl: clamp(3.5rem, 2.7174rem + 3.913vi, 5.75rem);
-  --space-5xl: clamp(5.25rem, 4.0761rem + 5.8696vi, 8.625rem);
-  --space-6xl: clamp(7rem, 5.4348rem + 7.8261vi, 11.5rem);
+  --space-4xs: clamp(0rem, 0rem + 0vi, 0rem);
+  --space-3xs: clamp(0.25rem, 0.2065rem + 0.2174vi, 0.375rem);
+  --space-2xs: clamp(0.4375rem, 0.3723rem + 0.3261vi, 0.625rem);
+  --space-xs: clamp(0.6875rem, 0.6005rem + 0.4348vi, 0.9375rem);
+  --space-s: clamp(0.875rem, 0.7446rem + 0.6522vi, 1.25rem);
+  --space-m: clamp(1.3125rem, 1.1168rem + 0.9783vi, 1.875rem);
+  --space-l: clamp(8.75rem, 7.4457rem + 6.5217vi, 12.5rem);
+  --space-xl: clamp(10.5rem, 8.9348rem + 7.8261vi, 15rem);
+  --space-2xl: clamp(1.75rem, 1.4891rem + 1.3043vi, 2.5rem);
+  --space-3xl: clamp(2.625rem, 2.2337rem + 1.9565vi, 3.75rem);
+  --space-4xl: clamp(3.5rem, 2.9783rem + 2.6087vi, 5rem);
+  --space-5xl: clamp(5.25rem, 4.4674rem + 3.913vi, 7.5rem);
+  --space-6xl: clamp(7rem, 5.9565rem + 5.2174vi, 10rem);
 
   /* One-up pairs */
-  --space-2xs-xs: clamp(0.4375rem, 0.2201rem + 1.087vi, 1.0625rem);
-  --space-xs-s: clamp(0.6875rem, 0.4266rem + 1.3043vi, 1.4375rem);
-  --space-s-m: clamp(0.875rem, 0.4185rem + 2.2826vi, 2.1875rem);
-  --space-m-l: clamp(1.3125rem, -3.231rem + 22.7174vi, 14.375rem);
-  --space-l-xl: clamp(8.75rem, 5.7935rem + 14.7826vi, 17.25rem);
-  --space-xl-2xl: clamp(2.875rem, 13.1522rem + -13.2609vi, 10.5rem);
-  --space-2xl-3xl: clamp(1.75rem, 0.8587rem + 4.4565vi, 4.3125rem);
-  --space-3xl-4xl: clamp(2.625rem, 1.538rem + 5.4348vi, 5.75rem);
-  --space-4xl-5xl: clamp(3.5rem, 1.7174rem + 8.913vi, 8.625rem);
-  --space-5xl-6xl: clamp(5.25rem, 3.0761rem + 10.8696vi, 11.5rem);
+  --space-4xs-3xs: clamp(0rem, -0.1304rem + 0.6522vi, 0.375rem);
+  --space-3xs-2xs: clamp(0.25rem, 0.1196rem + 0.6522vi, 0.625rem);
+  --space-2xs-xs: clamp(0.4375rem, 0.2636rem + 0.8696vi, 0.9375rem);
+  --space-xs-s: clamp(0.6875rem, 0.4918rem + 0.9783vi, 1.25rem);
+  --space-s-m: clamp(0.875rem, 0.5272rem + 1.7391vi, 1.875rem);
+  --space-m-l: clamp(1.3125rem, -2.5788rem + 19.4565vi, 12.5rem);
+  --space-l-xl: clamp(8.75rem, 6.5761rem + 10.8696vi, 15rem);
+  --space-xl-2xl: clamp(2.5rem, 13.2826rem + -13.913vi, 10.5rem);
+  --space-2xl-3xl: clamp(1.75rem, 1.0543rem + 3.4783vi, 3.75rem);
+  --space-3xl-4xl: clamp(2.625rem, 1.7989rem + 4.1304vi, 5rem);
+  --space-4xl-5xl: clamp(3.5rem, 2.1087rem + 6.9565vi, 7.5rem);
+  --space-5xl-6xl: clamp(5.25rem, 3.5978rem + 8.2609vi, 10rem);
 
   /* Custom pairs */
-  --space-s-l: clamp(0.875rem, -3.8207rem + 23.4783vi, 14.375rem);
-  --space-m-6xl: clamp(1.3125rem, -2.231rem + 17.7174vi, 11.5rem);
-  --space-3xs-s: clamp(0.25rem, -0.163rem + 2.0652vi, 1.4375rem);
+  --space-s-l: clamp(0.875rem, -3.1685rem + 20.2174vi, 12.5rem);
+  --space-m-6xl: clamp(1.3125rem, -1.7092rem + 15.1087vi, 10rem);
+  --space-3xs-s: clamp(0.25rem, -0.0978rem + 1.7391vi, 1.25rem);
+  --space-3xs-m: clamp(0.25rem, -0.3152rem + 2.8261vi, 1.875rem);
+  --space-4xs-s: clamp(0rem, -0.4348rem + 2.1739vi, 1.25rem);
 }
-
 [theme = "dark"] {
     --bg-color: #222629;
     --text-color: #618930;
     --extra-color:#87c232;
     --bg-image: url(/resources/images/backgroundDark.png);
 }
-
 [theme = "light"] {
     --bg-color: #3feee7;
     --text-color: #000000;
     --extra-color:#fc4444;
     --bg-image: url(/resources/images/backgroundLight.png);
+}
+body {
+  background: var(--bg-image);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-size: cover;
+  font-family: 'Fira Code';
+  background-attachment: fixed;
+}
+#homeText{
+  font-size: var(--space-xs-s);
+  text-align: center;
+  padding: 10px;
+  margin-right: var(--space-m-6xl);
+  margin-left: var(--space-m-6xl);
+  border: var(--extra-color) 1px solid;
+}
+#aboutmeText{
+  font-size: var(--space-xs-s);
+  text-align: center;
+  padding: 10px;
+  margin-right: var(--space-m-6xl);
+  margin-left: var(--space-m-6xl);
+  border: var(--extra-color) 1px solid;
+}
+#projectsText{
+  font-size: var(--space-xs-s);
+  text-align: center;
+  padding: 10px;
+  margin-right: var(--space-m-6xl);
+  margin-left: var(--space-m-6xl);
+  border: var(--extra-color) 1px solid;
+}
+#contactText{
+  font-size: var(--space-xs-s);
+  text-align: center;
+  padding: 10px;
+  margin-right: var(--space-m-6xl);
+  margin-left: var(--space-m-6xl);
+  border: var(--extra-color) 1px solid;
+}
+.parallax {
+  height:1000px;
+  font-size:36px;
+  text-align: center;
+  margin-right: var(--space-m-6xl);
+  margin-left: var(--space-m-6xl);
+}
+.menu {
+  position: fixed;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  border-radius: var(--space-2xs);
+}
+.menu li{
+  display: inline-block;
+  padding: var(--space-4xs-3xs);
+}
+.menu li a{
+  float: none;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: var(--space-4xs-3xs);
+  font-size: var(--space-s-m);
+}
+.menu li a:hover{
+  color: var(--bg-color);
+  background-color: var(--extra-color);
+  border-radius: var(--space-xs);
+}
+#themeButton{
+  position: relative;
+  width: var(--space-m);
+  height: var(--space-m);
+  padding: var(--space-3xs);
+
+}
+#themeButton:hover{
+  background-color: var(--extra-color);
+  border-radius: var(--space-xs-s);
+}
+@media (max-device-width: 480px){
+  #indexTitle{
+      padding-top: 10vh;
+  }
+}
+@media (min-device-width: 481px ) and (max-device-width: 767px){
+  #indexTitle{
+      padding-top: 12vh;
+  }
+}
+@media (min-device-width: 768px) {
+  .menu{
+    width: auto;
+    margin-top: 30vh;
+  }
+  .menu li{
+    display: list-item;
+  }
 }
