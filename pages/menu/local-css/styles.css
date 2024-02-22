@@ -2,11 +2,11 @@
   width: inherit;
   text-align: center;
   list-style: none;
+  position: fixed;
 }
 .menu a{
   font-size: var(--space-s);
   color: var(--text-color);
-  float: none;
   text-decoration: none;
   margin: var(--space-3xs-s);
 }
@@ -39,15 +39,18 @@
   background: var(--extra-color);
 }
 
-
 @media (max-device-width: 480px){
   .menu a {
     display: inline-block;
+    position: sticky;
+    margin: var(--space-3xs-s);
   }
 }
 
 @media (min-device-width: 1281px) {
   .menu a {
     display: list-item;
+    position: sticky;
+    margin: var(--space-3xs-s);
   } 
 }

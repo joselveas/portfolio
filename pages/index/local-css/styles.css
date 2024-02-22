@@ -4,7 +4,8 @@ body {
     margin: 0;
     background-color: var(--bg-color);
     background-size: cover;
-    font-family: PT Sans;
+    font-family: 'Fira Code';
+    background-attachment: fixed;
 }
 
 #indexTitle{
@@ -12,6 +13,14 @@ body {
     text-align: center;
     border-radius: 15px;
     padding: 10px;
+    margin-right: var(--space-m-6xl);
+    margin-left: var(--space-m-6xl);
+}
+
+.parallax {
+    height:1000px;
+    font-size:36px;
+    text-align: center;
     margin-right: var(--space-m-6xl);
     margin-left: var(--space-m-6xl);
 }
