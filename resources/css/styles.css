@@ -34,11 +34,13 @@
 [theme = "dark"] {
     --bg-color: #222629;
     --text-color: #618930;
+    --extra-color:#87c232;
     --bg-image: url(/resources/images/backgroundDark.png);
 }
 
 [theme = "light"] {
     --bg-color: #3feee7;
     --text-color: #000000;
+    --extra-color:#fc4444;
     --bg-image: url(/resources/images/backgroundLight.png);
 }

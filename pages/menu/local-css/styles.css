@@ -12,14 +12,33 @@
 }
 
 .menu a:hover {
-  background: #474a4f;
-  color: #87c232;
+  background: var(--text-color);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: var(--space-2xs);
+  font-size: var(--space-m);
+  animation: zoom 0.5s;
 }
+
+@keyframes zoom {
+  from{
+    font-size: var(--space-s);
+  }
+  to{
+    font-size: var(--space-m);
+  }
+}
+
 
 .themeChanger {
   text-align: justify;
   width: var(--space-m);
 } 
+
+#themeChooser:hover {
+  background: var(--extra-color);
+}
+
 
 @media (max-device-width: 480px){
   .menu a {
