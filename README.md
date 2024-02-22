@@ -3,8 +3,8 @@
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Theme](#theme)
-  * [Theme Palettes](#theme-palettes)
   * [Theme Background](#theme-background)
+  * [Theme Palettes](#theme-palettes)
 3. 
 
 # General Info
